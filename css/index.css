@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+#banner{
+  width: 100%;
+  overflow: hidden;
+}
+#banner>ul{
+  width: 300%;
+  display: flex;
+}
+#banner>ul>li{
+  width: 33.3333%;
+  height: 800px;
+  background: url('../images/banner01.jpg') no-repeat center; 
+  background-size: 100% auto;
+}
+#banner>ul>li:nth-child(2){
+  background-image: url('../images/banner02.jpg');
+
+}
+#banner>ul>li:nth-child(3){
+  background-image: url('../images/banner03.jpg');
+}
+
+/* 공통 */
+main>div{
+  width: 15%; height: 100%;
+  position: fixed;
+  right: 0; top: 80px;
+  background: url('../images/back.png') no-repeat top;
+}
+article{
+  width: 1440px;
+  margin: 0 auto 30px;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+article>h3{
+  font: 35px 'Century Gothic',sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+article>p{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* box01 */
+#box01{}
+#box01>div{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#box01 figure{
+  width: 400px;
+}
+#box01 figcaption{
+  padding: 20px 15px 25px;
+  box-sizing: border-box;
+  background-color: #f3f3f3;
+}
+#box01 figcaption>dl{
+  font: 22px/40px '나눔고딕',sans-serif;
+}
+#box01 figcaption>dl>dt{
+  font-weight: bold;
+}
+#box01 figcaption>dl>dd{
+  font-size: 18px;
+  position: relative;
+}
+#box01 figcaption>dl>dd>span{
+  position: absolute;
+  right: 15px; top: 0;
+  font-size: 16px;
+}
+
+/* box02 */
+#box02{
+  background-color: #A0C1B8;
+  color: #fff;
+  width: 100%;
+}
+#box02>div{
+  width: 1440px;
+  margin: 0 auto;
+}
+#box02 h3{
+  font-size: 45px;
+}
+#box02 #imgBox{
+  width: 1290px;
+  margin: 0 auto;
+}
+#box02 #imgBox>ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+#box02 #imgBox>ul>li{
+  width: 430px; height: 430px;
+  background: url('../images/img01.png') no-repeat center;
+  background-size: 100% auto;
+  position: relative;
+}
+#box02 #imgBox>ul>li:nth-child(2){
+  background-image: url('../images/img02.png');
+}
+#box02 #imgBox>ul>li:nth-child(3){
+  background-image: url('../images/img03.png');
+}
+#box02 #imgBox>ul>li:nth-child(4){
+  background-image: url('../images/img04.png');
+}
+#box02 #imgBox>ul>li:nth-child(5){
+  background-image: url('../images/img05.png');
+}
+#box02 #imgBox>ul>li:nth-child(6){
+  background-image: url('../images/img06.png');
+}
+#box02 ul>li:hover>p{
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100%; height: 100%;
+}
+#box02 ul>li:hover a{
+  display: block;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: -10px;
+  top: 50%; left: 50%;
+  width: 40px; height: 30px;
+  background-size: 100% auto;
+}
+#box02 ul>li:nth-child(1) a{
+  display: block;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: -20px;
+  top: 50%; left: 50%;
+  width: 40px; height: 30px;
+  background-size: 100% auto;
+}
+#box02 ul>li:nth-child(2) a{
+  background: url('../images/cam_w.png') no-repeat center;
+}
+#box02 ul>li:nth-child(3) a{
+  background: url('../images/coff_w.png') no-repeat center;
+}
+#box02 ul>li:nth-child(4) a{
+  background: url('../images/pic_w.png') no-repeat center;
+}
+#box02 ul>li:nth-child(5) a{
+  background: url('../images/pic_w.png') no-repeat center;
+}
+#box02 ul>li:nth-child(6) a{
+  background: url('../images/pic_w.png') no-repeat center;
+}
+
+/* box03 */
+#box03{
+  position: relative;
+}
+#box03>#gallery{
+  width: 66%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#box03>#gallery>ul{
+  width: 3000px;
+  display: flex;
+  justify-content: space-between;
+}
+#box03>#gallery>ul>li{
+  width: 450px; height: 400px;
+  background: url('../images/gall00.png') no-repeat center;
+}
+#box03>#gallery>ul>li:nth-child(2){
+  background-image: url('../images/gall01.png');
+}
+#box03>#gallery>ul>li:nth-child(3){
+  background-image: url('../images/gall02.png');
+}
+#box03>#gallery>ul>li:nth-child(4){
+  background-image: url('../images/gall03.png');
+}
+#box03>#gallery>ul>li:nth-child(5){
+  background-image: url('../images/gall04.png');
+}
+#box03>#gallery>ul>li:nth-child(6){
+  background-image: url('../images/gall06.png');
+}
+
+#box03>.prev{
+  position: absolute;
+  top: 50%; left: 5%;
+  width: 50px; height: 60px;
+  margin-top: 25px; 
+}
+#box03>.next{
+  position: absolute;
+  top: 50%; right: 5%;
+  margin-top: 25px; 
+  width: 50px; height: 60px;
+}
